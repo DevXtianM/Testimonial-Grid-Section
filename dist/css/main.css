@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  height: 100%;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+}
+
+main {
+  height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  padding: 0 0.5rem;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(230px, 267px));
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+article figure {
+  border-radius: 10px;
+  box-shadow: 0 1px 14px hsl(0, 0%, 81%);
+  padding: 24px 32px 28px 32px;
+}
+article figure .user-header {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: auto auto;
+  margin-bottom: 1.5rem;
+}
+article figure .user-header img {
+  grid-area: 1/1/3/2;
+  width: 80%;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+article figure .user-header .username {
+  grid-area: 1/2/1/2;
+  margin-left: 0.5rem;
+  align-self: flex-end;
+}
+article figure .user-header .user-status {
+  grid-area: 2/2/2/2;
+  margin-left: 0.5rem;
+}
+article figure.testimonial-1 {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-size: 120px;
+  background-position: right 90px top 1%;
+  background-repeat: no-repeat;
+  grid-area: 1/1/2/3;
+}
+article figure.testimonial-1 .user-header {
+  color: hsl(210, 46%, 95%);
+}
+article figure.testimonial-1 .user-header img {
+  border: 2px solid hsla(0, 0%, 100%, 0.3);
+}
+article figure.testimonial-1 .user-header .username {
+  font-weight: 600;
+}
+article figure.testimonial-1 .user-header .user-status {
+  opacity: 50%;
+}
+article figure.testimonial-1 h1 {
+  font-size: 1.313rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+article figure.testimonial-1 p {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.844rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+article figure.testimonial-2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: 1/3/2/3;
+}
+article figure.testimonial-2 .user-header {
+  color: hsl(210, 46%, 95%);
+}
+article figure.testimonial-2 .user-header .username {
+  font-weight: 600;
+}
+article figure.testimonial-2 .user-header .user-status {
+  opacity: 50%;
+}
+article figure.testimonial-2 h1 {
+  font-size: 1.313rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+article figure.testimonial-2 p {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.844rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+article figure.testimonial-3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 2/1/2/2;
+}
+article figure.testimonial-3 .user-header {
+  color: hsl(217, 19%, 35%);
+}
+article figure.testimonial-3 .user-header .username {
+  font-weight: 600;
+}
+article figure.testimonial-3 .user-header .user-status {
+  opacity: 50%;
+}
+article figure.testimonial-3 h1 {
+  font-size: 1.313rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: hsl(217, 19%, 35%);
+}
+article figure.testimonial-3 p {
+  color: hsl(219, 29%, 14%);
+  font-size: 0.844rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+article figure.testimonial-4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: 2/2/2/4;
+}
+article figure.testimonial-4 .user-header {
+  color: hsl(210, 46%, 95%);
+}
+article figure.testimonial-4 .user-header .username {
+  font-weight: 600;
+}
+article figure.testimonial-4 .user-header .user-status {
+  opacity: 50%;
+}
+article figure.testimonial-4 h1 {
+  font-size: 1.313rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+article figure.testimonial-4 p {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+article figure.testimonial-5 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 1/4/3/5;
+}
+article figure.testimonial-5 .user-header {
+  color: hsl(217, 19%, 35%);
+}
+article figure.testimonial-5 .user-header .username {
+  font-weight: 600;
+}
+article figure.testimonial-5 .user-header .user-status {
+  opacity: 50%;
+}
+article figure.testimonial-5 h1 {
+  font-size: 1.313rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: hsl(217, 19%, 35%);
+}
+article figure.testimonial-5 p {
+  color: hsl(219, 29%, 14%);
+  font-size: 0.844rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+@media (max-width: 1024px) {
+  article {
+    height: 100vh;
+    gap: 28px;
+  }
+  article figure .user-header img {
+    width: 90%;
+  }
+  article figure.testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-size: 26%;
+    background-position: right 10% top 1%;
+    grid-area: 1/1/2/3;
+  }
+  article figure.testimonial-1 h1 {
+    font-size: 1rem;
+  }
+  article figure.testimonial-1 p {
+    font-size: 0.9rem;
+  }
+  article figure.testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: 1/3/2/3;
+  }
+  article figure.testimonial-2 .user-header {
+    align-items: center;
+    justify-content: center;
+  }
+  article figure.testimonial-2 h1 {
+    font-size: 1rem;
+  }
+  article figure.testimonial-2 p {
+    font-size: 0.8rem;
+  }
+  article figure.testimonial-3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 2/1/2/2;
+  }
+  article figure.testimonial-3 .user-header {
+    align-items: center;
+    justify-content: center;
+  }
+  article figure.testimonial-3 .user-header .username {
+    font-weight: 600;
+  }
+  article figure.testimonial-3 .user-header .user-status {
+    opacity: 50%;
+  }
+  article figure.testimonial-3 h1 {
+    font-size: 1rem;
+  }
+  article figure.testimonial-3 p {
+    font-size: 0.8rem;
+  }
+  article figure.testimonial-4 {
+    grid-area: 2/2/2/4;
+  }
+  article figure.testimonial-4 h1 {
+    font-size: 1rem;
+  }
+  article figure.testimonial-4 p {
+    font-size: 0.8rem;
+  }
+  article figure.testimonial-5 h1 {
+    font-size: 1rem;
+  }
+  article figure.testimonial-5 p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.8125rem;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding: 0 0.5rem;
+  }
+  article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  article figure.testimonial-1 {
+    background-size: 120px 120px;
+    background-position: right 10% top 1%;
+    grid-area: 1/1/2/2;
+  }
+  article figure.testimonial-1 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-1 p {
+    font-size: 1rem;
+  }
+  article figure.testimonial-2 {
+    grid-area: 2/1/3/2;
+  }
+  article figure.testimonial-2 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-2 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-2 p {
+    font-size: 1rem;
+  }
+  article figure.testimonial-3 {
+    grid-area: 3/1/4/2;
+  }
+  article figure.testimonial-3 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-3 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-3 p {
+    font-size: 1rem;
+  }
+  article figure.testimonial-4 {
+    grid-area: 4/1/5/2;
+  }
+  article figure.testimonial-4 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-4 p {
+    font-size: 1rem;
+  }
+  article figure.testimonial-5 {
+    grid-area: 5/1/6/2;
+  }
+  article figure.testimonial-5 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-5 p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 475px) {
+  body {
+    height: 100%;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.8125rem;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem;
+    padding: 0 0.5rem;
+  }
+  article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  article figure {
+    padding: 24px 33px 28px 32px;
+  }
+  article figure .user-header {
+    margin-bottom: 0.8rem;
+  }
+  article figure.testimonial-1 {
+    background-size: 100px 105px;
+    background-position: right 10% top 1%;
+    grid-area: 1/1/2/2;
+  }
+  article figure.testimonial-1 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-1 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-2 {
+    grid-area: 2/1/3/2;
+  }
+  article figure.testimonial-2 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-2 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-2 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-3 {
+    grid-area: 3/1/4/2;
+  }
+  article figure.testimonial-3 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-3 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-3 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-4 {
+    grid-area: 4/1/5/2;
+  }
+  article figure.testimonial-4 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-4 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-5 {
+    grid-area: 5/1/6/2;
+  }
+  article figure.testimonial-5 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-5 p {
+    font-size: 0.758rem;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    height: 100%;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.8125rem;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem;
+    padding: 0 0.5rem;
+  }
+  article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  article figure {
+    padding: 24px 33px 28px 32px;
+  }
+  article figure.testimonial-1 {
+    background-size: 120px;
+    background-position: right 10% top 1%;
+    grid-area: 1/1/2/2;
+  }
+  article figure.testimonial-1 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-1 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-2 {
+    grid-area: 2/1/3/2;
+  }
+  article figure.testimonial-2 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-2 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-2 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-3 {
+    grid-area: 3/1/4/2;
+  }
+  article figure.testimonial-3 .user-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article figure.testimonial-3 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-3 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-4 {
+    grid-area: 4/1/5/2;
+  }
+  article figure.testimonial-4 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-4 p {
+    font-size: 0.758rem;
+  }
+  article figure.testimonial-5 {
+    grid-area: 5/1/6/2;
+  }
+  article figure.testimonial-5 h1 {
+    font-size: 1.25rem;
+  }
+  article figure.testimonial-5 p {
+    font-size: 0.758rem;
+  }
+}/*# sourceMappingURL=main.css.map */
