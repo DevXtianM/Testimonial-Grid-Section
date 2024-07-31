@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](https://github.com/DevXtianM/Testimonials-Grid-Section/blob/main/screenshot/desktop-view.png)
-![Mobile View](https://github.com/DevXtianM/Testimonials-Grid-Section/blob/main/screenshot/mobile-view.png)
+![Desktop View](https://github.com/DevXtianM/Testimonial-Grid-Section/blob/main/screenshot/desktop-view.png)
+![Mobile View](https://github.com/DevXtianM/Testimonial-Grid-Section/blob/main/screenshot/mobile-view.png)
 
 ### Links
 
